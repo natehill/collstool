@@ -5,7 +5,7 @@ layout: default
 <div class="home">
     {% for c in site.data.councils.councils.council %}
     <div>
-      <h2>{{ c.name }}: {{ c.total }}</h2>
+      <h3>{{ c.name }}: {{ c.total }}</h3>
 	<div>
 	  {% for p in c.provider %}
 	  <b>{{ p.name }}: {{ p.total }}</b>
