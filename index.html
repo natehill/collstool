@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Councils</h1>
+
+  <ul class="post-list">
+    {% for c in site.data.councils.councils.council %}
+    <li>
+      {{ c.name }}: {{ c.total }}
+	<ul>
+	  {% for p in c.provider %}
+	  <li>{{ p.name }}: {{ p.total }}</li>
+	  <ul>
+	    {% for col in p.coll %}
+	    <li>{{ col['name'] }}: {{ col['count'] }}</li>
+	    {% endfor %}
+	  </ul>
+	  {% endfor %}
+	</ul>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
