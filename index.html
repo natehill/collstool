@@ -3,26 +3,27 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Councils</h1>
-
-  <ul class="post-list">
     {% for c in site.data.councils.councils.council %}
-    <li>
-      {{ c.name }}: {{ c.total }}
-	<ul>
+    <div>
+      <h2>{{ c.name }}: {{ c.total }}</h2>
+	<div>
 	  {% for p in c.provider %}
-	  <li>{{ p.name }}: {{ p.total }}</li>
-	  <ul>
-	    {% for col in p.coll %}
-	    <li>{{ col['name'] }}: {{ col['count'] }}</li>
+	  <b>{{ p.name }}: {{ p.total }}</b>
+	  <div>
+	    <table style="padding-left:20px;">
+	    {% if p.coll.size == 3 %}
+	    <tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
+	    {% else %}
+	    {% for col in p['coll']%}
+	    <tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
 	    {% endfor %}
-	  </ul>
+	    {% endif %}
+	    </table>
+	  </div>
 	  {% endfor %}
-	</ul>
-    </li>
+	</div>
+    </div>
     {% endfor %}
-  </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
