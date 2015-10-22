@@ -14,7 +14,7 @@ layout: default
 	  <div class="coll">
 	  <div class="owner" onClick="$(this).next().toggle()">{{ p.name }}: {{ p.total }}</div>
 	  <div class="colls">
-	    <table style="padding-left:20px;">
+	    <table>
 	    {% if p.coll.size == 3 %}
 	    <tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
 	    {% else %}
