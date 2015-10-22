@@ -9,25 +9,24 @@ layout: default
     {% for c in site.data.councils.councils.council %}
     <div class="council">
       <div class="title">{{ c.name }}: {{ c.total }}</div>
-	<div class="provider">
 	  {% for p in c.provider %}
 	  <div class="coll">
-	  <div class="owner" onClick="$(this).next().toggle()">{{ p.name }}: {{ p.total }}</div>
-	  <div class="colls">
-	    <table style="padding-left:20px;">
-	    {% if p.coll.size == 3 %}
-	    <tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
-	    {% else %}
-	    {% for col in p['coll']%}
-	    <tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
-	    {% endfor %}
-	    {% endif %}
-	    </table>
-	  </div>
+	    <div class="owner" onClick="$(this).next().toggle()">{{ p.name }}: {{ p.total }}</div>
+	    <div class="colls">
+	      <table style="padding-left:20px;">
+		{% if p.coll.size == 3 %}
+		<tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
+		{% else %}
+		{% for col in p['coll']%}
+		<tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
+		{% endfor %}
+		{% endif %}
+	      </table>
+	    </div>
 	  </div>
 	  {% endfor %}
-	</div>
     </div>
+</div>
     {% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
