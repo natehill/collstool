@@ -1,12 +1,9 @@
 .council .title {
     font-weight: bold;
+    font-size:110%;
 }
 
-.council .owner {
-    font-weight: 400;
-}
-
-.council .coll .colls {
+.council .colls {
     padding-left: 20px;
 }
 
@@ -15,6 +12,6 @@
 }
 
 .council .provider { display:none; }
-.provider .colls { display:none; }
-.wrapper .title { cursor: pointer; }
-.wrapper .owner { cursor: pointer; }
+.provider .colls { display:none; padding-bottom:5px; }
+.wrapper .title { cursor: pointer; padding-bottom:5px; }
+.wrapper .owner { font-weight:bold; font-size:105%; cursor: pointer; padding-bottom: 5px; color:#708090;}
