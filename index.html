@@ -10,11 +10,11 @@ layout: default
   <div id="councils" id="councils">
     {% for c in site.data.councils.repox.councils.council %}
     <div class="council">
-      <div class="title">{{ c.name }}: {{ c.total }}</div>
+      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }}</div>
       <div class="provider">
 	{% for p in c.provider %}
 	<div class="coll">
-	  <div class="owner" onClick="$(this).next().toggle()">{{ p.name }}: {{ p.total }}</div>
+	  <div class="owner"><img src="images/right.png"/>&nbsp;{{ p.name }}: {{ p.total }}</div>
 	  <div class="colls">
 	    <table>
 	      <tbody>
@@ -38,7 +38,7 @@ layout: default
   <div id="providers">
     {% for c in site.data.councils.repox.owners.owner %}
     <div class="provider">
-      <div class="title" onClick="$(this).next().toggle()">{{ c.name }}: {{ c.total }}</div>
+      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }}</div>
       <div class="colls">
 	{% if c.coll %}
 	{% if c.coll.size == 2 %}

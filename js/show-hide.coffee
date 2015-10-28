@@ -4,8 +4,28 @@
 $(window).load ->
   $('.council .title').click ->
     $(this).next().toggle()
+    if $(this).children('img').attr('src') == 'images/down.png'
+       $(this).children('img').attr 'src', 'images/right.png'
+    else
+       $(this).children('img').attr 'src', 'images/down.png'
     return
-$(document).ready ->
+
+  $('.council .owner').click ->
+    $(this).next().toggle()
+    if $(this).children('img').attr('src') == 'images/down.png'
+       $(this).children('img').attr 'src', 'images/right.png'
+    else
+       $(this).children('img').attr 'src', 'images/down.png'
+    return
+
+  $('.provider .title').click ->
+    $(this).next().toggle()
+    if $(this).children('img').attr('src') == 'images/down.png'
+       $(this).children('img').attr 'src', 'images/right.png'
+    else
+       $(this).children('img').attr 'src', 'images/down.png'
+    return
+
   $('#switcher').click ->
     if $('#switcher').text() == 'View by provider'
       $('#switcher').text 'View by council'
@@ -14,4 +34,5 @@ $(document).ready ->
     $('#councils').toggle()
     $('#providers').toggle()
   return
+
 return
