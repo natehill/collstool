@@ -6,30 +6,51 @@ layout: default
 <script src="js/show-hide.js"></script>
 
 <div class="home">
-    {% for c in site.data.councils.councils.council %}
+  <div id="switcher">By provider</div>
+  <div id="councils" id="councils">
+    {% for c in site.data.councils.repox.councils.council %}
     <div class="council">
       <div class="title">{{ c.name }}: {{ c.total }}</div>
-	<div class="provider">
-	  {% for p in c.provider %}
-	  <div class="coll">
+      <div class="provider">
+	{% for p in c.provider %}
+	<div class="coll">
 	  <div class="owner" onClick="$(this).next().toggle()">{{ p.name }}: {{ p.total }}</div>
 	  <div class="colls">
 	    <table>
-	    {% if p.coll.size == 3 %}
-	    <tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
-	    {% else %}
-	    {% for col in p['coll']%}
-	    <tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
-	    {% endfor %}
-	    {% endif %}
+	      <tbody>
+		{% if p.coll.size == 3 %}
+		<tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
+		{% else %}
+		{% for col in p['coll']%}
+		<tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
+		{% endfor %}
+		{% endif %}
+	      </tbody>
 	    </table>
 	  </div>
-	  </div>
-	  {% endfor %}
 	</div>
+	{% endfor %}
+      </div>
     </div>
     {% endfor %}
+  </div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div id="providers">
+    {% for c in site.data.councils.repox.owners.owner %}
+    <div class="provider">
+      <div class="title" onClick="$(this).next().toggle()">{{ c.name }}: {{ c.total }}</div>
+      <div class="colls">
+	{% if c.coll %}
+	{% if c.coll.size == 2 %}
+	<div class="coll">{{ c.coll['name'] }}: {{ c.coll['total'] }}</div>
+	{% else %}
+	{% for p in c.coll %}
+	<div class="coll">{{ p['name'] }}: {{ p['total'] }}</div>
+	{% endfor %}
+	{% endif %}
+	{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
