@@ -1,30 +1,23 @@
 ---
 
 ---
+show_hide = (the_obj) ->
+    $(the_obj).next().toggle()
+    if $(the_obj).children('img').attr('src') == 'images/down.png'
+       $(the_obj).children('img').attr 'src', 'images/right.png'
+    else
+       $(the_obj).children('img').attr 'src', 'images/down.png'
+    return
+
 $(window).load ->
   $('.council .title').click ->
-    $(this).next().toggle()
-    if $(this).children('img').attr('src') == 'images/down.png'
-       $(this).children('img').attr 'src', 'images/right.png'
-    else
-       $(this).children('img').attr 'src', 'images/down.png'
-    return
+    show_hide this
 
   $('.council .owner').click ->
-    $(this).next().toggle()
-    if $(this).children('img').attr('src') == 'images/down.png'
-       $(this).children('img').attr 'src', 'images/right.png'
-    else
-       $(this).children('img').attr 'src', 'images/down.png'
-    return
+    show_hide this
 
   $('.provider .title').click ->
-    $(this).next().toggle()
-    if $(this).children('img').attr('src') == 'images/down.png'
-       $(this).children('img').attr 'src', 'images/right.png'
-    else
-       $(this).children('img').attr 'src', 'images/down.png'
-    return
+    show_hide this
 
   $('#switcher').click ->
     if $('#switcher').text() == 'View by provider'
