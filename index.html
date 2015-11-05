@@ -7,6 +7,7 @@ layout: default
 
 <a id="top"></a>
 <div class="home">
+  <div class="grand-total">Grand total: {{ site.data.councils.repox.total }}</div>
   <div id="switcher">View by provider</div>
   <div id="councils">
     {% for c in site.data.councils.repox.councils.council %}
