@@ -6,12 +6,13 @@
           name: "Government Agencies"
           total: "57833"
           provider: 
-            coll: 
-              count: "57833"
-              name: "New York State Library-Digital Collections"
-              spec: "library1_lib"
-            name: "New York State Library"
-            total: "57833"
+            -
+              coll: 
+                count: "57833"
+                name: "New York State Library-Digital Collections"
+                spec: "library1_lib"
+              name: "New York State Library"
+              total: "57833"
         - 
           name: "Western New York Library Resources Council"
           total: "12883"
