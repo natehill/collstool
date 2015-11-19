@@ -7,7 +7,8 @@ layout: default
 
 <a id="top"></a>
 <div class="home">
-  <div class="grand-total">Grand total: {{ site.data.councils.repox.total }}</div>
+  <div class="grand-total"><strong>Grand total:</strong> {{ site.data.councils.repox.total }} ({{ site.data.councils.repox.hosting-totals.hosted-total }} hosted, {{ site.data.councils.repox.hosting-totals.non-hosted-total }} non-hosted)</div>
+  <div class="host-total"><strong>By host</strong> NYH: {{ site.data.councils.repox.hosting-totals.nyh-total }} |  HRVH: {{ site.data.councils.repox.hosting-totals.hrvh-total }} | DCMNY: {{ site.data.councils.repox.hosting-totals.dcmny-total }}
   <div id="switcher">View by provider</div>
   <div id="councils">
     {% for c in site.data.councils.repox.councils.council %}
@@ -44,7 +45,7 @@ layout: default
       <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }} </div>
       <div class="colls">
 	{% if c.coll %}
-	{% if c.coll.size == 2 %}
+	{% if c.coll['name'] != '' %}
 	<div class="coll">{{ c.coll['name'] }}: {{ c.coll['total'] }}</div>
 	{% else %}
 	{% for p in c.coll %}
@@ -57,5 +58,4 @@ layout: default
     {% endfor %}
     <a href="#top">Top of page</a>
   </div>
-  
 </div>

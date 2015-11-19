@@ -7,7 +7,9 @@ baseurl: "/collstool" # the subpath of your site, e.g. /blog/
 url: "http://ESDNHub.github.io" # the base hostname & protocol for your site
 twitter_username: NYSDigital
 github_username:  ESDNHub
-
+hosted_total: 0
 # Build settings
 markdown: kramdown
 gems: [octopress-debugger]
+
+  

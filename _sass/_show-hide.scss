@@ -47,7 +47,22 @@
 
 .home .grand-total {
     font-size: 120%;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.home .grand-total strong {
+    font-weight: bolder;
+    color: $grey-color-dark;
+}
+
+.home .host-total {
+    font-size: 110%;
+    padding-bottom: 20px;
+}
+
+.home .host-total strong {
+    font-weight: bolder;
+    color: $grey-color-dark;
 }
 
 #switcher {
