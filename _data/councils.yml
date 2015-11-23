@@ -1324,15 +1324,22 @@
               name: "University at Buffalo"
               total: "2936"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "0"
+            non-hosted-total: "57833"
+            council-hosted-total: "57833"
+            dcmny-council-total: "0"
           name: "Government Agencies"
           total: "57833"
-          provider: 
-            coll: 
-              count: "57833"
-              name: "New York State Library-Digital Collections"
-              spec: "library1_lib"
-            name: "New York State Library"
-            total: "57833"
+          provider:
+            -
+              coll: 
+                  count: "57833"
+                  name: "New York State Library-Digital Collections"
+                  spec: "library1_lib"
+              name: "New York State Library"
+
     owners: 
       owner: 
         - 
