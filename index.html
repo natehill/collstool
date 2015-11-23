@@ -43,10 +43,10 @@ layout: default
   <div id="providers">
     {% for c in site.data.councils.repox.owners.owner %}
     <div class="provider">
-      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }} </div>
+      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }}</div>
       <div class="colls">
 	{% if c.coll %}
-	{% if c.coll['name'] != '' %}
+	{% if c.coll['name'] != nil %}
 	<div class="coll">{{ c.coll['name'] }}: {{ c.coll['total'] }}</div>
 	{% else %}
 	{% for p in c.coll %}
