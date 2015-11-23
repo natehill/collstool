@@ -3,16 +3,12 @@
     councils: 
       council: 
         - 
-          name: "Government Agencies"
-          total: "57833"
-          provider:
-            -
-              coll: 
-                  count: "57833"
-                  name: "New York State Library-Digital Collections"
-                  spec: "library1_lib"
-              name: "New York State Library"
-        - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "13337"
+            non-hosted-total: "87"
+            council-hosted-total: "13337"
+            dcmny-council-total: "0"
           name: "Capital District Library Council"
           total: "13424"
           provider: 
@@ -238,6 +234,12 @@
               name: "miSci"
               total: "6266"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "4144"
+            non-hosted-total: "1068"
+            council-hosted-total: "4144"
+            dcmny-council-total: "0"
           name: "Central New York Library Resources Council"
           total: "5212"
           provider: 
@@ -424,33 +426,14 @@
               name: "Waterville Public Library"
               total: "5"
         - 
-          name: "Metropolitan New York Library\n                    Council"
-          total: "582"
-          provider: 
-            - 
-              coll: 
-                count: "224"
-                name: "Cartes de Visite Collection"
-                spec: "nyam_cartesdevisites"
-              name: "New York Academy of Medicine"
-              total: "224"
-            - 
-              coll: 
-                count: "246"
-                name: "White Plains Collection"
-                spec: "wppl_wpc"
-              name: "White Plains Public Library"
-              total: "246"
-            - 
-              coll: 
-                count: "112"
-                name: "WCS Publications and Printed Ephemera Collection"
-                spec: "wcs_ephemera"
-              name: "Wildlife Conservation Society"
-              total: "112"
-        - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "0"
+            non-hosted-total: "1904"
+            council-hosted-total: "18829"
+            dcmny-council-total: "18829"
           name: "Metropolitan New York Library Council"
-          total: "20151"
+          total: "20733"
           provider: 
             - 
               coll: 
@@ -460,8 +443,12 @@
               name: "Fordham University"
               total: "143"
             - 
-              name: "American Jewish Joint Distribution Committee\n                    Archives"
-              total: "0"
+              coll: 
+                count: "9"
+                name: "American Jewish Joint Distribution Committee Archives"
+                spec: "jdc"
+              name: "American Jewish Joint Distribution Committee Archives"
+              total: "9"
             - 
               coll: 
                 count: "70"
@@ -606,8 +593,25 @@
               name: "Queens Borough Public Library"
               total: "9465"
             - 
-              name: "New York Philharmonic Leon Levy Digital\n                    Archives"
-              total: "0"
+              coll: 
+                - 
+                  count: "4234"
+                  name: "New York Philharmonic Business Records Collection"
+                  spec: "BusinessRecords"
+                - 
+                  count: "15918"
+                  name: "New York Philharmonic Music Parts Collection"
+                  spec: "MusicParts"
+                - 
+                  count: "1765"
+                  name: "New York Philharmonic Music Scores Collection"
+                  spec: "MusicScores"
+                - 
+                  count: "12915"
+                  name: "New York Philharmonic Program Collection"
+                  spec: "Programs"
+              name: "New York Philharmonic Leon Levy Digital Archives"
+              total: "34832"
             - 
               coll: 
                 - 
@@ -620,6 +624,13 @@
                   spec: "fulton_collection"
               name: "Brooklyn Public Library"
               total: "328"
+            - 
+              coll: 
+                count: "224"
+                name: "Cartes de Visite Collection"
+                spec: "nyam_cartesdevisites"
+              name: "New York Academy of Medicine"
+              total: "224"
             - 
               coll: 
                 - 
@@ -641,6 +652,13 @@
               total: "125"
             - 
               coll: 
+                count: "246"
+                name: "White Plains Collection"
+                spec: "wppl_wpc"
+              name: "White Plains Public Library"
+              total: "246"
+            - 
+              coll: 
                 count: "996"
                 name: "Whitney Museum Library-Whitney Studio Club and Galleries, 1907-1930"
                 spec: "whitneystudioclub_collection"
@@ -653,12 +671,22 @@
                   name: "WCS Library-New York Aquarium Postcards"
                   spec: "nyaquarium_collection"
                 - 
+                  count: "112"
+                  name: "WCS Publications and Printed Ephemera Collection"
+                  spec: "wcs_ephemera"
+                - 
                   count: "329"
                   name: "WCS and NYBG Libraries-Bronx Park Postcards"
                   spec: "bronxpark_collection"
               name: "Wildlife Conservation Society"
-              total: "423"
+              total: "535"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "95"
+            non-hosted-total: "3428"
+            council-hosted-total: "95"
+            dcmny-council-total: "0"
           name: "Northern New York Library Network"
           total: "3523"
           provider: 
@@ -708,16 +736,27 @@
               name: "Watertown Flower Memorial Library"
               total: "95"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "4123"
+            non-hosted-total: "2237"
+            council-hosted-total: "4123"
+            dcmny-council-total: "0"
           name: "Rochester Regional Library Council"
           total: "6360"
           provider: 
             - 
               coll: 
-                count: "2"
-                name: "Hayes-Coleman Family Papers"
-                spec: "islandora_2599"
-              name: "University of Rochester, River Campus\n                    Libraries"
-              total: "2"
+                - 
+                  count: "47"
+                  name: "William Thomas Moncrieff Papers"
+                  spec: "islandora_2377_1"
+                - 
+                  count: "103"
+                  name: "University of Rochester-Kenneth B. Keating Collection"
+                  spec: "islandora_416"
+              name: "University of Rochester, River Campus Libraries"
+              total: "150"
             - 
               name: "Appellate Division, Fourth Department Law Library"
               total: "218"
@@ -924,6 +963,12 @@
               name: "University of Rochester. Memorial Art Gallery"
               total: "1338"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "1767"
+            non-hosted-total: "0"
+            council-hosted-total: "1767"
+            dcmny-council-total: "0"
           name: "South Central Regional Library Council"
           total: "1767"
           provider: 
@@ -962,18 +1007,14 @@
               name: "Wells College"
               total: "12"
         - 
-          name: "Southeastern New York Library Resources\n          Council"
-          total: "6495"
-          provider: 
-            - 
-              name: "Historic Huguenot Street"
-              total: "884"
-            - 
-              name: "Nyack Library"
-              total: "5611"
-        - 
+          hosting-totals: 
+            hrvh-council-total: "12018"
+            nyh-council-total: "0"
+            non-hosted-total: "684"
+            council-hosted-total: "12018"
+            dcmny-council-total: "0"
           name: "Southeastern New York Library Resources Council"
-          total: "6207"
+          total: "12702"
           provider: 
             - 
               coll: 
@@ -996,10 +1037,35 @@
               name: "The Culinary Institute of America"
               total: "2217"
             - 
-              name: "Vassar College Libraries, Poughkeepsie,\n                    N.Y"
-              total: "0"
+              coll: 
+                - 
+                  count: "99"
+                  name: "Vassar College Libraries-Susan B. Anthony Papers"
+                  spec: "vassar_anthony_susan_b"
+                - 
+                  count: "1"
+                  name: "Vassar College Libraries-Bidloo's Anatomia (Vassar's Millionth Volume)"
+                  spec: "vassar_bidloo"
+                - 
+                  count: "53"
+                  name: "Vassar College Libraries-John Burroughs Journals"
+                  spec: "vassar_burroughs"
+                - 
+                  count: "56"
+                  name: "Vassar College Libraries-Vassar College Student Diaries"
+                  spec: "vassar_diaries"
+                - 
+                  count: "247"
+                  name: "Vassar College Libraries-Images of Early Vassar"
+                  spec: "vassar_earlyimages"
+                - 
+                  count: "145"
+                  name: "Vassar College Libraries-Jasper Parrish Papers"
+                  spec: "vassar_parrish"
+              name: "Vassar College Libraries, Poughkeepsie, N.Y"
+              total: "601"
             - 
-              name: "Bard\n      College. Bard College Archives"
+              name: "Bard College. Bard College Archives"
               total: "501"
             - 
               name: "Chester Historical Society"
@@ -1014,6 +1080,9 @@
               name: "Franklin D. Roosevelt Presidential Library and Museum"
               total: "83"
             - 
+              name: "Historic Huguenot Street"
+              total: "884"
+            - 
               name: "Hudson River Valley Institute"
               total: "786"
             - 
@@ -1022,6 +1091,9 @@
             - 
               name: "Newburgh Free Library"
               total: "288"
+            - 
+              name: "Nyack Library"
+              total: "5611"
             - 
               coll: 
                 count: "1046"
@@ -1042,6 +1114,12 @@
               name: "Wilderstein Historic Site"
               total: "108"
         - 
+          hosting-totals: 
+            hrvh-council-total: "0"
+            nyh-council-total: "11263"
+            non-hosted-total: "1620"
+            council-hosted-total: "11263"
+            dcmny-council-total: "0"
           name: "Western New York Library Resources Council"
           total: "12883"
           provider: 
@@ -1245,6 +1323,16 @@
                   spec: "p16694coll1"
               name: "University at Buffalo"
               total: "2936"
+        - 
+          name: "Government Agencies"
+          total: "57833"
+          provider: 
+            coll: 
+              count: "57833"
+              name: "New York State Library-Digital Collections"
+              spec: "library1_lib"
+            name: "New York State Library"
+            total: "57833"
     owners: 
       owner: 
         - 
@@ -1345,7 +1433,7 @@
           total: "218"
         - 
           council: "Southeastern New York Library Resources Council"
-          name: "Bard\n      College. Bard College Archives"
+          name: "Bard College. Bard College Archives"
           total: "501"
         - 
           council: "Capital District Library Council"
@@ -1698,7 +1786,7 @@
           name: "Highland Hospital. Library"
           total: "122"
         - 
-          council: "Southeastern New York Library Resources\n          Council"
+          council: "Southeastern New York Library Resources Council"
           name: "Historic Huguenot Street"
           total: "884"
         - 
@@ -1785,7 +1873,7 @@
           name: "Middleburgh Library"
           total: "153"
         - 
-          council: "Metropolitan New York Library\n                    Council"
+          council: "Metropolitan New York Library Council"
           coll: 
             name: "Cartes de Visite Collection"
             total: "224"
@@ -1919,7 +2007,7 @@
           name: "Northville Public Library"
           total: "12"
         - 
-          council: "Southeastern New York Library Resources\n          Council"
+          council: "Southeastern New York Library Resources Council"
           name: "Nyack Library"
           total: "5611"
         - 
@@ -1937,14 +2025,6 @@
         - 
           council: {}
           coll: 
-            name: "A History of the Black Community of Syracuse"
-            total: "93"
-            spec: "p16694coll6"
-          name: "Onondaga\n      Community College. Library"
-          total: "94"
-        - 
-          council: {}
-          coll: 
             - 
               name: "Urban League of Onondaga County, Inc. Collection"
               total: "15"
@@ -1959,6 +2039,14 @@
               spec: "srr_ocpl"
           name: "Onondaga\n      County Public Library. Local History & Genealogy Department"
           total: "1047"
+        - 
+          council: {}
+          coll: 
+            name: "A History of the Black Community of Syracuse"
+            total: "93"
+            spec: "p16694coll6"
+          name: "Onondaga Community College. Library"
+          total: "94"
         - 
           council: "Central New York Library Resources Council"
           coll: 
@@ -2616,7 +2704,7 @@
           name: "Wells College"
           total: "12"
         - 
-          council: "Metropolitan New York Library\n                    Council"
+          council: "Metropolitan New York Library Council"
           coll: 
             name: "White Plains Collection"
             total: "246"

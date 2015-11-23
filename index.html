@@ -13,7 +13,7 @@ layout: default
   <div id="councils">
     {% for c in site.data.councils.repox.councils.council %}
     <div class="council">
-      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }}</div>
+      <div class="title"><img src="images/right.png"/>&nbsp;{{ c.name }}: {{ c.total }} ({{ c.hosting-totals.council-hosted-total }} hosted, {{ c.hosting-totals.non-hosted-total }} non-hosted)<p>NYH {{ c.hosting-totals.nyh-council-total }} |  HRVH {{ c.hosting-totals.hrvh-council-total }} | DCMNY {{ c.hosting-totals.dcmny-council-total }}</p></div>
       <div class="provider">
 	{% for p in c.provider %}
 	<div class="coll">
