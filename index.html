@@ -22,10 +22,10 @@ layout: default
 	  <div class="colls">
 	    <table>
 	      <tbody>
-		{% if p.coll.size == 3 %}
+		{% if p.coll['name'] != nil %}
 		<tr><td>{{ p.coll['name'] }}</td><td>{{ p.coll['count'] }}</td></tr>
 		{% else %}
-		{% for col in p['coll']%}
+		{% for col in p.coll %}
 		<tr><td>{{ col.name }}</td><td>{{ col.count }}</td></tr>
 		{% endfor %}
 		{% endif %}
